@@ -35,9 +35,13 @@ class cPaciente
 		#pragma endregion
 
 		#pragma region Metodos
-		
+			
 			eResultado GetResultadoTesteo();
 			
+			/// <summary>
+			/// Cuenta la cantidad de sintomas positivos
+			/// </summary>
+			/// <returns>variable int representando la cant. de sintomas positivos</returns>
 			int GetCantSintomas();
 
 			string GetDNI();
@@ -46,6 +50,11 @@ class cPaciente
 
 			void SetResultadoTesteo(eResultado resultado);
 			
+			/// <summary>
+			/// Retorna un string con el siguiente formato:
+			/// Nombre + Apellido + DNI 
+			/// </summary>
+			/// <returns>string conteniendo parametros del paciente</returns>
 			string ToString();
 
 		#pragma endregion	

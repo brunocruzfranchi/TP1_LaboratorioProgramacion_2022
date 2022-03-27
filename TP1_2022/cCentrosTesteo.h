@@ -52,21 +52,22 @@ class cCentrosTesteo
 		/// <summary>
 		/// Recibe un paciente, verifica que haya un espacio para 
 		/// atenderlo y si lo hay se lo asigna a uno de los 2 punteros.
-		/// Caso contrario, se imprime en pantalla que el centro se encuentra lleno.
+		/// Caso contrario, se imprime en pantalla el error que se tuvo.
 		/// </summary>
+		/// <param name="paciente">Paciente a ser dado de alta</param>
 		bool AltaPaciente(cPaciente* paciente);
 
 		/// <summary>
-		/// Recibe el laboratorio al que se quiere
-		/// enviar la muestra para que este determine la presencia 
-		/// de COVID en elpaciente
+		/// Manda las muestras al laboratorio asignado
+		/// para que este determine la presencia 
+		/// de COVID en el paciente
 		/// </summary>
 		void MandarTesteo();
 
 		/// <summary>
-		/// Si el atributo “Resultado Testeo” de los pacientes no se
-		/// encuentra en “Sin resultado” se pueden poner en NULL los 
-		/// punteros a los pacientes
+		/// Si el atributo “Resultado Testeo” de los pacientes es
+		/// diferente a “Sin resultado”, se pueden poner en NULL 
+		/// los punteros a los pacientes.
 		/// </summary>
 		void BajaPaciente();
 
@@ -75,13 +76,28 @@ class cCentrosTesteo
 		/// el centro de testeo
 		/// </summary>
 		/// <param name="laboratorio">Laboratorio a ser asociado al Centro</param>
-		void AsociarLaboratorio(cLaboratorio* laboratorio);
+		bool AsociarLaboratorio(cLaboratorio* laboratorio);
 
 		/// <summary>
 		/// Desasocia el laboratorio asignado
 		/// </summary>
-		/// <param name="laboratorio"></param>
 		void DesasociarLaboratorio();
+		
+		/// <summary>
+		/// Imprime en pantalla la informacion 
+		/// del Centro de Testeo
+		/// </summary>
+		void ImprimirEnPantalla();
+
+		/// <summary>
+		/// Realiza un resumen de todos los atributos
+		/// del Centro y los retorna en un texto de 
+		/// tipo string
+		/// </summary>
+		/// <returns>Informacion del centro</returns>
+		string ToString();
+
+		string GetNombre();
 
 	#pragma endregion
 };

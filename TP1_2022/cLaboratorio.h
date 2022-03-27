@@ -54,7 +54,9 @@ class cLaboratorio
 		/// </summary>
 		void AvisarPacientes();
 
-		unsigned int GetIDLaboratorio();
+		unsigned int GetIDLaboratorio();		
+		
+		string GetNombre();
 
 		bool IsCompleto();
 

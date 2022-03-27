@@ -4,6 +4,7 @@
 
 cPaciente::cPaciente(string Nombre, string Apellido, string DNI, string Telefono, bool Fiebre, bool Tos, bool Mocos, bool ContactoEstrecho, bool DolorCabeza, bool DolorGarganta)
 {
+	//Inicializo todas las variables!
 	this->Nombre = Nombre;
 	this->Apellido = Apellido;
 	this->DNI = DNI;
@@ -19,6 +20,7 @@ cPaciente::cPaciente(string Nombre, string Apellido, string DNI, string Telefono
 
 cPaciente::~cPaciente()
 {
+	//No tengo que eliminar nada
 }
 
 eResultado cPaciente::GetResultadoTesteo()
@@ -50,7 +52,7 @@ int cPaciente::GetCantSintomas()
 {
 	int cont = 0;
 
-	if (Fiebre)
+	if(Fiebre)
 		cont++;
 	if(Tos)
 		cont++;
