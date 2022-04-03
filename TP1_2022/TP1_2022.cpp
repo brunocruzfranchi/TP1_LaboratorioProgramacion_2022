@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-	//Creo mis variables a utilizar, siempre DINAMICAS
+	//Creo mis variables a utilizar
 	cPaciente* miPaciente1 = new cPaciente("Bruno", "Cruz Franchi", "45612318", "1164951234", 
 		true, true, true, false, false, false);
 	cPaciente* miPaciente2 = new cPaciente("Taylor", "Swift", "95789456", "1111111111",
