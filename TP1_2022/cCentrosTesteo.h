@@ -22,23 +22,7 @@ class cCentrosTesteo
 	//#pragma region es una forma de tener mejor estructurado el codigo 
 	#pragma region Construcctores y Destructores
 
-		//CentrosTesteo();
-		/*Constructor por defecto
-		* En este caso, no se encuentra declarado porque si usamos un 
-		* Constructor por parametros con defecto con todos los parametros 
-		* ya declarados, se tendria en definitiva un Contructor por 
-		* defecto
-		*/
-
-		/* Contructor por parametros
-		*CentrosTesteo(unsigned int IDCentro,
-		*	string Nombre,
-		*	string Comuna,
-		*	bool Completo,
-		*	unsigned int IDLaboratorio);
-		*/
-
-		//Contructor por parametros por defecto
+		//Constructor por parametros por defecto
 		cCentrosTesteo(unsigned int IDCentro = 0, 
 			string Nombre = "Test", 
 			string Comuna = "Comuna Nro");

@@ -25,7 +25,7 @@ class cPaciente
 		
 		#pragma region Constructores y Destructores
 
-			//Constructor por parametros por defecto
+			//Constructor por parametros 
 			cPaciente(string Nombre, string Apellido, string DNI, string Telefono,
 				bool Fiebre, bool Tos, bool Mocos, bool ContactoEstrecho, bool DolorCabeza, bool DolorGarganta);
 		

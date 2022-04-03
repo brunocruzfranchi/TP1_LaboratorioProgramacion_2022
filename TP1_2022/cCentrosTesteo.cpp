@@ -15,7 +15,6 @@ cCentrosTesteo::cCentrosTesteo(unsigned int IDCentro, string Nombre, string Comu
 
 cCentrosTesteo::~cCentrosTesteo()
 {
-	//Nada que borrar
 }
 
 bool cCentrosTesteo::AltaPaciente(cPaciente* paciente)

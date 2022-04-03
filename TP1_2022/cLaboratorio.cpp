@@ -3,7 +3,7 @@
 
 cLaboratorio::cLaboratorio(unsigned int IDLaboratorio, string Nombre, string Comuna)
 {
-	//Inicializo todas las variables!
+	//Inicializo todas las variables
 	this->IDLaboratorio = IDLaboratorio;
 	this->Nombre = Nombre;
 	this->Comuna = Comuna;
@@ -14,7 +14,6 @@ cLaboratorio::cLaboratorio(unsigned int IDLaboratorio, string Nombre, string Com
 
 cLaboratorio::~cLaboratorio()
 {
-	//Nada que borrar
 }
 
 void cLaboratorio::RecibirMuestra(cPaciente* paciente)
@@ -94,8 +93,7 @@ void cLaboratorio::AnalisisMuestra()
 			Paciente2->SetResultadoTesteo(eResultado::Negativo);
 	}
 
-	//Llamo a la funcion AvisarPacientes que se encarga de mandar un msg
-	//y de eliminar las muestras del laboratorio
+	
 	AvisarPacientes();
 }
 
