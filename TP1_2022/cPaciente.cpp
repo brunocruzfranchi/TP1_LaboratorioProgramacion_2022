@@ -33,6 +33,11 @@ void cPaciente::SetResultadoTesteo(eResultado resultado)
 	this->ResultadoTesteo = resultado;
 }
 
+void cPaciente::ImprimirEnPantalla()
+{
+	cout << this->ToString() << endl;
+}
+
 string cPaciente::ToString()
 {
 	return " Nombre: " + Nombre + " " + Apellido + " DNI: " + DNI + " ";

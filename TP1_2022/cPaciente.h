@@ -50,6 +50,9 @@ class cPaciente
 
 			void SetResultadoTesteo(eResultado resultado);
 			
+
+			void ImprimirEnPantalla();
+
 			/// <summary>
 			/// Retorna un string con el siguiente formato:
 			/// Nombre + Apellido + DNI 

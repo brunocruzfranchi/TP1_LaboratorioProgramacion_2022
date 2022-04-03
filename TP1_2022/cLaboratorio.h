@@ -55,12 +55,23 @@ class cLaboratorio
 		/// </summary>
 		void AvisarPacientes();
 
+
 		unsigned int GetIDLaboratorio();		
 		
+
 		string GetNombre();
+
 
 		bool IsCompleto();
 
+
+		void ImprimirEnPantalla();
+
+		/// <summary>
+		/// Imprime los datos relevantes del Laboratorio al igual
+		/// que los nombres de las muestras que se tiene almacenadas
+		/// </summary>
+		/// <returns></returns>
 		string ToString();
 
 	#pragma endregion

@@ -133,7 +133,12 @@ bool cLaboratorio::IsCompleto()
 	return Completo;
 }
 
-string cLaboratorio::ToString() 
+void cLaboratorio::ImprimirEnPantalla()
+{
+	cout << this->ToString() << endl;
+}
+
+string cLaboratorio::ToString()
 {
 	string text = "";
 
