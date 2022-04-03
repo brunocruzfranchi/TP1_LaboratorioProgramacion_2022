@@ -75,12 +75,13 @@ int main()
 	Centro1->MandarTesteo();
 	Centro2->MandarTesteo();
 
-	cout << "\n================= Analisis muestras =================" << endl;
+	cout << "================= Analisis muestras =================" << endl;
 
 	//Realizo el analisis de las muestras de cada laboratorio
 	Laboratorio1->AnalisisMuestra();
 	Laboratorio2->AnalisisMuestra();
-	
+
+	//Hago los deletes de cada uno de los objetos dinamicos
 	delete miPaciente1;
 	delete miPaciente2;
 	delete miPaciente3;
